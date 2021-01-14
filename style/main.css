@@ -1,0 +1,45 @@
+/*Variáveis dentro do CSS3*/
+    :root{
+        --vermelho:#e50914;
+        --preta:#141414;
+    }
+
+/* Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta); /*Definindo dentro do corpo a cor da variável*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    border: 1px solid white; /* Usar esta borda para ver o limite da página*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Logo Netflix*/
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
