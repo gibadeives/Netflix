@@ -1,4 +1,4 @@
-# **Clone**  ![NETFLIX](C:\Users\Pai\Geral\Cursos IT\DIO\Netflix\img\netflix.png) 
+# **Clone NETFLIX**
 
 
 
