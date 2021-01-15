@@ -13,7 +13,7 @@
 
 body{
     background: var(--preta); /*Definindo dentro do corpo a cor da variável*/
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -27,12 +27,19 @@ header .container{
 }
 
 /* Logo Netflix*/
-header .logo{
-    margin-left: 5px;
+
+.img-netflix a{
+    width: 248px;
+    height: 21px;
+    text-indent:  -9999px;
+    display: block;
+        
+    /*margin-left: 5px;
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
-    font-size: 40px;
+    font-size: 40px;*/
 }
+
 
 header nav a{
     text-decoration: none;
@@ -50,13 +57,19 @@ header nav a:hover{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/Netflix/img/The\ Good\ Doctor-capa.jpg');
     
-    height: 480px;
-    background-size: cover;
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    
+    position: relative;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
 .filme-principal .descricao{
@@ -104,4 +117,36 @@ header nav a:hover{
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+
+}
+
+/* Rodapé
+------------------------------------ */
+footer a{
+    padding: 10px;
+	color: #AAA;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    text-align: center;
+    position: relative;
+}
+
+footer a:hover {
+    padding: 20px;
+    color: #fff;
+}
+
+footer {
+	clear: both;
+	padding: 20px 0 30px 0;
+	text-align: center;
+	margin-top: 20px;
+}
+
+footer p a {
+	padding: 20px 10px;
 }

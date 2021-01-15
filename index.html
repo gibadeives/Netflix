@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+ 
+
+    <!--Responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
 
     <!--owl css -->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
@@ -14,7 +18,12 @@
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <div class="img-netflix">
+                <h1><a href="">NETFLIX</a></h1>
+                <img src="img/netflix.png" alt="">
+                <!-- <h2 class="logo">NETFLIX</h2> -->
+            </div>
+            
             <nav>
                 <a href="#">Início</a>
                 <a href="#">Séries</a>
@@ -33,13 +42,15 @@
             
                 <div class="botoes">
                     <button role="button" class="botao">
-                        <i class="fas fa-play"></i>
-                        ASSISTIR AGORA
+                        
+                        <i class="fas fa-play" href="#" onclick="window.open('abertura.html','pagename','resizable,height=400,width=540');return false;">ABERTURA</i>
+                        
                     </button>
+                    
                     <button role="button" class="botao">
-                        <i class="fas fa-info-circle"></i>
-
-                        MAIS INFORMAÇÕES
+                        
+                        <i class="fas fa-info-circle" href="#" onclick="window.open('//pt.wikipedia.org/wiki/The_Good_Doctor');">MAIS INFORMAÇÕES</i>
+                        
                     </button>
                 </div>        
             </div>
@@ -87,6 +98,17 @@
 
         </div>
     </div>
+
+    <footer>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Documentários</a><br><br> 
+            <a href="https://github.com/gibadeives/Netflix">Gilberto Cruz</a> - Todos os direitos reservados - 2021.         
+        </nav>
+        
+    </footer>
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="js/owl/jquery.min.js"></script>

@@ -19,7 +19,7 @@ $('.owl-carousel').owlCarousel({
 
 var owl = $('.owl-carousel');
 owl.owlCarousel({
-    items:7,
+    items:10,
     loop:true,
     margin:10,
     autoplay:true,
